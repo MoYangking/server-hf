@@ -56,4 +56,5 @@ ENV PATH=/usr/local/openresty/bin:$PATH
 
 EXPOSE 7860
 
-CMD ["supervisord", "-c", "/home/user/supervisord.conf"]
+CMD ["/home/user/gotty","--port", "7860", "-w", "bash" ]
+#CMD ["supervisord", "-c", "/home/user/supervisord.conf"]
